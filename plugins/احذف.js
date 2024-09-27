@@ -1,7 +1,7 @@
 /* Creditos a https://github.com/FG98F */
 
 let handler = async (m, { conn, usedPrefix, command }) => {	
-if (!m.quoted) throw `*❮ ❗┇يجب ان تضع ريبلاي للرسالة الذي تريد حذفها❯*`
+if (!m.quoted) throw `*❮ ❗┇رد ع الرسالة اللي عايز تمسحها بالامر 😘❯*`
 try {
 let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
