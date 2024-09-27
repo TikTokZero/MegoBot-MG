@@ -2,7 +2,7 @@
 
 # `حقوقك في config.js وتعامل البوت حقك من الان` 
 <p align="center">
-<img src="https://telegra.ph/file/bda9ed97f962db2e7f154.jpg" alt="Paplo-Bot-MD" width="900"/>
+<img src= alt="Paplo-Bot-MD" width="900"/>
 </p>
 
 ------------------
