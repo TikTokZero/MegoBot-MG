@@ -7,15 +7,15 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
     const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
     let text = `
-*✦⌈⇖ مــعـلــومـات الــجـروب ⇘⌋✦*
+*✦⌈⇖ مــعـلــومـات الــروم ⇘⌋✦*
 
-*❖↫ الــأسـم : ${groupMetadata.subject}* 
+*❖↫ الــأسـم ☻️: ${groupMetadata.subject}* 
 
-*❖↫ الــأعـضاء : ${participants.length}*
+*❖↫ الــأعـضاء 👥️️: ${participants.length}*
 
-*❖↫ الــمـالك : @${owner.split('@')[0]}* 
+*❖↫ الــمـالك 👤: @${owner.split('@')[0]}* 
 
-*❖↫ الــمشـرفــين :*
+*❖↫ الــمشـرفــين 🗣:*
  ${listAdmin}
 
 ❖↫ *تــكـويـن الــمـجمـوعـه :*
