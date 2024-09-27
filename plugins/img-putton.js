@@ -1,13 +1,13 @@
-//ميجو يحبكم 🤭❤️
+//بابلو بيحبكم 🤭❤️
 //اهينك اذا تغير المصدر
 //قناه المصدر
-//https://whatsapp.com/channel/0029VaRygQcATRSk29RI4P1x
+//https://whatsapp.com/channel/0029VapvokVCHDyj6inRiP3T
 
 import { googleImage } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `️ *${usedPrefix + command} سوكونا*`
-const prohibited = ['بنات', 'بز', 'سكس']
-if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('محظوره يعرص الصور دي 😂')      
+const prohibited = ['نيك', 'بنات', 'بز', 'سكس' ,'كس']
+if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('يلا يمتناك ينجس من هنا الصور محظورة 😂 والله لاقول لبابلو المطور بتاعي🥲)      
 try {
 const res = await googleImage(text)
 let image = res.getRandom()
