@@ -11,7 +11,7 @@ const handler = async (m, {conn, usedPrefix: prefix, command, text}) => {
     }
     await conn.sendMessage(m.chat, {document: {url: data5.dllink}, mimetype: 'application/vnd.android.package-archive', fileName: data5.name + '.apk', caption: null}, {quoted: m});
   } catch {
-    throw `֎╎ايـرور❗`;
+    throw `֎╎خطا يابن الصرمة 😂❗`;
   }    
 };
 handler.command = /^(apkmod|apk|apek|تطبيق)$/i;
