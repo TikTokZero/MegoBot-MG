@@ -2,13 +2,13 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
-}//غير ڤينوم و حط اسم بوتك
+}//اسم البوت بابلو لا تغير لانة البوت الاساسي للتدريب 
 let pesan = args.join` `
 let oi = `*👾~الرساله:* ${pesan}`
 let teks = `*منش👾 🌸 جماعي* \n\n ${oi}\n\n*🌿┇الجروب :⇣*\n`
 for (let mem of participants) {
 teks += `*👾↫* @${mem.id.split('@')[0]}\n`}
-teks += `*V E N O M BOT*\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
+teks += `*P A P L O BOT*\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
