@@ -2,7 +2,7 @@ import yts from 'yt-search'
 import fs from 'fs'
 
 let handler = async (m, {conn, text }) => {
-  if (!text) throw '⚠️ *_يرجى كتابة الامر وجنبه ما تريد البحث عنه باليوتيوب_*'
+  if (!text) throw '⚠️ *_اكتب الامر وجنبة اللي عايز تبحث عنة في اليوتيوب_*'
   await conn.reply(m.chat, global.wait, m)
   let results = await yts(text)
   let tes = results.all
