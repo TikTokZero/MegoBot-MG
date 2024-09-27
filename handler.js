@@ -35,7 +35,7 @@ export async function handler(chatUpdate) {
     return;
   }
   if (global.db.data == null) await global.loadDatabase();
-  /* Creditos a Otosaka (https://wa.me/51993966345) */
+  /* Creditos a Otosaka (https://wa.me/201128218963) */
 
   if (global.chatgpt.data === null) await global.loadChatgptDB();
 
@@ -52,7 +52,7 @@ export async function handler(chatUpdate) {
     try {
       // TODO: use loop to insert data instead of this
       const user = global.db.data.users[m.sender];
-      /* Creditos a Otosaka (https://wa.me/51993966345) */
+      /* Creditos a Otosaka (https://wa.me/201128218963) */
 
       const chatgptUser = global.chatgpt.data.users[m.sender];
       if (typeof chatgptUser !== 'object') {
@@ -1535,16 +1535,16 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-        rowner: '*『 الميزه دي للمطور بس! 』*',
-        owner: '*『 الميزه دي للمطور بس يحب ! 』*',
-        mods: '*『 الميزه دي لمطور البوت بس ! 』*',
-        premium: '*『 الميزه دي للاعضاء المميزين بس ! 』*',
-        group: '*『 الميزه دي في الجروبات بس ! 』*',
-        private: '*『 الميزه دي للبرايفت - الخاص بس ! 』*',
-        admin: '*『 الميزه دي للادمن بس! 』*',
-        botAdmin: '*『 ارفع البوت ادمن الاول ! 』*',
-        unreg: '*[ لحظة !! انت مش مسجل ]*\n\n*『 سجل الامر عشان تفعله 』*\n*➣ #تسجيل*',
-        restrict: '*『 الميزه دي المطور لغيها ! 』*'
+        rowner: '*『 🙄الميزه دي للمطور بابلو بس! 』*',
+        owner: '*『 😗الميزه دي للمطور بابلو بس يحب ! 』*',
+        mods: '*『 🧐الميزه دي لمطور البوت بابلو بس ! 』*',
+        premium: '*『 💈الميزه دي للاعضاء المميزين بس ! 』*',
+        group: '*『 👥️️الميزه دي في الجروبات بس ! 』*',
+        private: '*『 👤الميزه دي للبرايفت - الخاص بس ! 』*',
+        admin: '*『 🧚‍♀️الميزه دي للادمن بس! 』*',
+        botAdmin: '*『 🙅‍♂️ارفع البوت ادمن الاول ! 』*',
+        unreg: '*[ 😴لحظة !! انت مش مسجل ]*\n\n*『 سجل الامر عشان تفعله 』*\n*➣ #تسجيل*',
+        restrict: '*『 🥲الميزه دي المطور بابلو لغيها ! 』*'
     }[type]
   const aa={'\x71\x75\x6f\x74\x65\x64':m,'\x75\x73\x65\x72\x4a\x69\x64':conn['\x75\x73\x65\x72']['\x6a\x69\x64']},prep=generateWAMessageFromContent(m['\x63\x68\x61\x74'],{'\x65\x78\x74\x65\x6e\x64\x65\x64\x54\x65\x78\x74\x4d\x65\x73\x73\x61\x67\x65':{'\x74\x65\x78\x74':msg,'\x63\x6f\x6e\x74\x65\x78\x74\x49\x6e\x66\x6f':{'\x65\x78\x74\x65\x72\x6e\x61\x6c\x41\x64\x52\x65\x70\x6c\x79':{'\x74\x69\x74\x6c\x65':'\x2a\x5b\x20\u26a0\x20\x5d\x20\u0645\u0639\u0644\u0648\u0645\u0647\x20\u0645\u0647\u0645\u0647\x2a','\x62\x6f\x64\x79':'\ud835\ude62\x2c\ud835\ude5a\x2c\ud835\ude5c\x2c\ud835\ude64\x2c\x20\u2766\ufe0e','\x74\x68\x75\x6d\x62\x6e\x61\x69\x6c':imagen1,'\x73\x6f\x75\x72\x63\x65\x55\x72\x6c':'\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x61\x74\x6f\x6d\x2e\x62\x69\x6f\x2f\x6d\x65\x67\x6f\x35\x31\x5f\x35\x31'}}}},aa);if(msg)return conn['\x72\x65\x6c\x61\x79\x4d\x65\x73\x73\x61\x67\x65'](m['\x63\x68\x61\x74'],prep['\x6d\x65\x73\x73\x61\x67\x65'],{'\x6d\x65\x73\x73\x61\x67\x65\x49\x64':prep['\x6b\x65\x79']['\x69\x64']});
 };
