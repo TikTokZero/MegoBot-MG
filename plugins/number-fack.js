@@ -1,10 +1,10 @@
 /*
 ╮────────────────────────╭ـ
-│ By : 𝗦𝗔𝗬𝗘𝗗-𝗦𝗛𝗔𝗪𝗔𝗭𝗔 🧞
-│ Number : https://wa.me/201145624848
-│ Community : https://chat.whatsapp.com/Hg4F5jQ9Z9r1lUH6I1jkhI
-│ Group Support : https://chat.whatsapp.com/JGtNRFwfHJC8XholdKmVGS
-│ Chanel : https://whatsapp.com/channel/0029Vael6wMJP20ze3IXJk0z
+│ By : 𖤍𝑷𝑨𝑷𝑳𝑶 𝑯𝑨𝑪𝑲𝑰𝑵𝑮𖤍 🧞
+│ Number : https://wa.me/201063510519
+│ Community : https://chat.whatsapp.com/ZS4LMR4CW7KTB1
+│ Group Support : https://chat.whatsapp.com/DsuuBwr5tVTFmujOWfEBhn
+│ Chanel : https://whatsapp.com/channel/0029VapvokVCHDyj6inRiP3T
 ╯────────────────────────╰ـ 
 */
 
@@ -81,7 +81,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     message: {
       interactiveMessage: {
         body: { text: caption },
-        footer: { text: '𝑺𝐻𝐴𝑊𝐴𝑍𝐴-𝐵𝛩𝑇' },
+        footer: { text: '𝑷𝑨𝑷𝑳𝑶-𝑩𝑶𝑻' },
         header: {
           hasMediaAttachment: true,
           imageMessage: media.imageMessage,
@@ -118,7 +118,7 @@ return await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
 
         } catch (error) {
             console.log(error);
-            return conn.sendButton(m.chat, `╮────────────────────────╭ـ\n│ حدث خطأ أثناء جلب البيانات. حاول مرة أخرى لاحقًا.\n╯────────────────────────╰ـ `, '𝑺𝐻𝐴𝑊𝐴𝑍𝐴-𝐵𝛩𝑇', pp, [['حاول مجددا',`${usedPrefix + command} دولة`]], null, null, m);
+            return conn.sendButton(m.chat, `╮────────────────────────╭ـ\n│ في حاجة غلط حصلت انا بجيب البيانات. معلش حاول تاني.\n╯────────────────────────╰ـ `, '𝑺𝐻𝐴𝑊𝐴𝑍𝐴-𝐵𝛩𝑇', pp, [['حاول مجددا',`${usedPrefix + command} دولة`]], null, null, m);
         }
     } else if (feature === "أرقام") {
         if (!additionalLink) {
